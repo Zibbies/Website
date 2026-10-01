@@ -3,154 +3,223 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CX Command Center | Favour Adaka</title>
+    <title>Portfolio | Favour Adaka</title>
     <style>
         :root {
-            --bg-color: #0f172a;
-            --card-bg: #1e293b;
-            --text-main: #f8fafc;
-            --text-muted: #94a3b8;
-            --accent: #38bdf8;
-            --accent-glow: rgba(56, 189, 248, 0.15);
-            --border: #334155;
+            --bg-color: #ffffff;
+            --text-main: #111827;
+            --text-muted: #4b5563;
+            --accent: #2563eb;
+            --border: #e5e7eb;
+            --table-header: #f9fafb;
         }
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
             background-color: var(--bg-color);
             color: var(--text-main);
-            line-height: 1.6;
+            line-height: 1.7;
             margin: 0;
             padding: 0;
         }
-        header {
-            border-bottom: 1px solid var(--border);
-            padding: 2.5rem 1rem;
-            background: linear-gradient(180deg, #131e35 0%, var(--bg-color) 100%);
-        }
         .container {
-            max-width: 850px;
+            max-width: 720px;
             margin: 0 auto;
-            padding: 0 1.5rem;
+            padding: 4rem 1.5rem;
         }
-        h1 { font-size: 2.5rem; margin: 0 0 0.5rem 0; color: var(--text-main); }
-        h2 { font-size: 1.75rem; margin: 3rem 0 1.5rem 0; color: var(--accent); border-bottom: 1px solid var(--border); padding-bottom: 0.5rem; }
-        h3 { font-size: 1.25rem; color: var(--text-main); margin-top: 1.5rem; }
-        p, li { color: var(--text-muted); font-size: 1.05rem; }
-        a { color: var(--accent); text-decoration: none; }
-        a:hover { text-decoration: underline; }
-        
-        .nav-bar { margin-top: 1.5rem; font-size: 0.95rem; }
-        .nav-bar a { margin-right: 1.5rem; border: 1px solid var(--border); padding: 0.4rem 0.8rem; border-radius: 6px; background: var(--card-bg); transition: all 0.2s; }
-        .nav-bar a:hover { background: var(--accent-glow); border-color: var(--accent); text-decoration: none; }
-
-        table { width: 100%; border-collapse: collapse; margin: 2rem 0; background: var(--card-bg); border-radius: 8px; overflow: hidden; border: 1px solid var(--border); }
-        th, td { padding: 1rem; text-align: left; border-bottom: 1px solid var(--border); }
-        th { background-color: rgba(0,0,0,0.2); color: var(--accent); font-weight: 600; }
-        tr:last-child td { border-bottom: none; }
-        td strong { color: var(--accent); }
-
-        blockquote { background: var(--accent-glow); border-left: 4px solid var(--accent); margin: 2rem 0; padding: 1rem 1.5rem; border-radius: 0 8px 8px 0; }
-        blockquote p { color: var(--text-main); font-style: italic; margin: 0; }
-        
-        ul { padding-left: 1.2rem; }
-        li { margin-bottom: 0.5rem; }
-
-        .pipeline-flow {
-            background: var(--card-bg);
-            padding: 1rem;
-            border-radius: 6px;
-            border: 1px solid var(--border);
-            text-align: center;
-            font-weight: bold;
+        header {
+            margin-bottom: 3.5rem;
+        }
+        h1 { 
+            font-size: 2.25rem; 
+            font-weight: 700; 
+            letter-spacing: -0.025em; 
+            margin: 0 0 0.5rem 0; 
+            color: var(--text-main); 
+        }
+        .subtitle {
+            font-size: 1.15rem;
+            color: var(--text-muted);
+            margin: 0 0 1.5rem 0;
+            line-height: 1.5;
+        }
+        h2 { 
+            font-size: 1.35rem; 
+            font-weight: 600; 
+            text-transform: uppercase; 
+            letter-spacing: 0.05em; 
+            margin: 3.5rem 0 1.25rem 0; 
+            color: var(--text-main); 
+            border-bottom: 2px solid var(--text-main); 
+            padding-bottom: 0.25rem; 
+        }
+        h3 { 
+            font-size: 1.1rem; 
+            font-weight: 600; 
+            color: var(--text-main); 
+            margin: 1.75rem 0 0.5rem 0; 
+        }
+        p, li { 
+            color: var(--text-muted); 
+            font-size: 1rem; 
+        }
+        a { 
+            color: var(--text-main); 
+            text-decoration: none; 
+            border-bottom: 1px solid var(--text-muted);
+            font-weight: 500;
+        }
+        a:hover { 
             color: var(--accent);
+            border-bottom-color: var(--accent); 
+        }
+        
+        .nav-bar { 
+            font-size: 0.9rem; 
+            margin-top: 1rem;
+        }
+        .nav-bar a { 
+            margin-right: 1.25rem; 
+            border-bottom: none;
+            color: var(--text-muted);
+        }
+        .nav-bar a:hover {
+            color: var(--text-main);
+        }
+
+        table { 
+            width: 100%; 
+            border-collapse: collapse; 
+            margin: 2rem 0; 
+        }
+        th, td { 
+            padding: 0.75rem 1rem; 
+            text-align: left; 
+            border-bottom: 1px solid var(--border); 
+            font-size: 0.95rem;
+        }
+        th { 
+            background-color: var(--table-header); 
+            color: var(--text-main); 
+            font-weight: 600; 
+        }
+        td strong { 
+            color: var(--text-main); 
+        }
+
+        blockquote { 
+            border-left: 3px solid var(--text-main); 
+            margin: 2.5rem 0; 
+            padding: 0.5rem 0 0.5rem 1.25rem; 
+        }
+        blockquote p { 
+            color: var(--text-main); 
+            font-style: italic; 
+            font-size: 1.1rem;
+            margin: 0; 
+        }
+        
+        ul { 
+            padding-left: 1.1rem; 
+        }
+        li { 
+            margin-bottom: 0.5rem; 
+        }
+
+        .pipeline-track {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--text-main);
+            letter-spacing: 2px;
             margin: 1.5rem 0;
-            letter-spacing: 1px;
+            padding: 0.5rem 0;
+            border-top: 1px dashed var(--border);
+            border-bottom: 1px dashed var(--border);
+            text-align: center;
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <div class="container">
+    <div class="container">
+        <header>
             <h1>Favour Ejiroghene Adaka</h1>
-            <p style="color: var(--accent); font-weight: 500; margin: 0;">Customer Experience & Operations Leader | Customer Success | Account Management</p>
+            <p class="subtitle">Customer Experience & Operations Leader | Customer Success | Account Management</p>
             <div class="nav-bar">
-                <a href="https://linkedin.com" target="_blank">LinkedIn Profile ↗</a>
-                <a href="mailto:efavouradaka@gmail.com">Email Me ↗</a>
+                <a href="https://linkedin.com" target="_blank">LinkedIn Profile &rarr;</a>
+                <a href="mailto:efavouradaka@gmail.com">Email Me &rarr;</a>
             </div>
-        </div>
-    </header>
+        </header>
 
-    <main class="container" style="padding-bottom: 5rem;">
-        
-        <h2>⚡ Executive Summary</h2>
-        <p>I lead customer experience operations at the intersection of <strong>people, process, data, and technology</strong> — building scalable service models that improve retention, strengthen customer relationships, and turn customer insight into measurable business impact.</p>
-        <p>My experience spans <strong>Fintech, Banking, Telecommunications, Travel & Hospitality, CRM and SaaS</strong>, including high-volume customer environments and geographically distributed operations.</p>
-        <ul>
-            <li><strong>Customer &rarr; Product:</strong> Translate recurring friction into action.</li>
-            <li><strong>Operational Scale:</strong> Managed teams of <strong>45+ staff</strong> and <strong>100K+ customer issues</strong>.</li>
-            <li><strong>Retention Lever:</strong> Shifted operations from reactive ticket handling to proactive value creation.</li>
-        </ul>
+        <main>
+            <h2>Executive Summary</h2>
+            <p>I lead customer experience operations at the intersection of <strong>people, process, data, and technology</strong> — building scalable service models that improve retention, strengthen customer relationships, and turn customer insight into measurable business impact.</p>
+            <p>My experience spans <strong>Fintech, Banking, Telecommunications, Travel & Hospitality, CRM and SaaS</strong>, including high-volume customer environments and geographically distributed operations.</p>
+            <ul>
+                <li><strong>Customer &rarr; Product:</strong> Translate recurring friction into systemic product improvement.</li>
+                <li><strong>Operational Scale:</strong> Managed teams of <strong>45+ staff</strong> and <strong>100K+ customer issues</strong>.</li>
+                <li><strong>Retention Lever:</strong> Shifted operations from reactive ticket handling to proactive value creation.</li>
+            </ul>
 
-        <h2>📈 Leadership, Scale & Business Impact</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Area</th>
-                    <th>Demonstrated Impact</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr><td><strong>Team leadership</strong></td><td><strong>45+ staff</strong></td></tr>
-                <tr><td><strong>Customer issues managed</strong></td><td><strong>100K+</strong></td></tr>
-                <tr><td><strong>Customer base supported</strong></td><td><strong>100K &rarr; 500K+</strong></td></tr>
-                <tr><td><strong>Customer Satisfaction (CSAT)</strong></td><td><strong>87%</strong></td></tr>
-                <tr><td><strong>Customer retention</strong></td><td><strong>+45%</strong></td></tr>
-                <tr><td><strong>SLA violations</strong></td><td><strong>-56%</strong></td></tr>
-                <tr><td><strong>Contact abandonment</strong></td><td><strong>~70% &rarr; &lt;10%</strong></td></tr>
-                <tr><td><strong>Complaints within SLA</strong></td><td><strong>99%</strong></td></tr>
-                <tr><td><strong>Potential losses saved</strong></td><td><strong>₦170M</strong></td></tr>
-            </tbody>
-        </tbody>
-        </table>
+            <h2>Leadership, Scale & Business Impact</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Operational Area</th>
+                        <th>Demonstrated Impact</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Team leadership</td><td><strong>45+ staff</strong></td></tr>
+                    <tr><td>Customer issues managed</td><td><strong>100K+</strong></td></tr>
+                    <tr><td>Customer base supported</td><td><strong>100K &rarr; 500K+</strong></td></tr>
+                    <tr><td>Customer Satisfaction (CSAT)</td><td><strong>87%</strong></td></tr>
+                    <tr><td>Customer retention</td><td><strong>+45%</strong></td></tr>
+                    <tr><td>SLA violations</td><td><strong>-56%</strong></td></tr>
+                    <tr><td>Contact abandonment</td><td><strong>~70% &rarr; &lt;10%</strong></td></tr>
+                    <tr><td>Complaints within SLA</td><td><strong>99%</strong></td></tr>
+                    <tr><td>Potential losses saved</td><td><strong>₦170M</strong></td></tr>
+                </tbody>
+            </table>
 
-        <blockquote>
-            <p>"The goal is not simply to reduce tickets. The goal is to reduce avoidable demand while protecting customer experience, renewals and account value."</p>
-        </blockquote>
+            <blockquote>
+                <p>"The goal is not simply to reduce tickets. The goal is to reduce avoidable demand while protecting customer experience, renewals, and account value."</p>
+            </blockquote>
 
-        <h2>🛠️ Core Capabilities</h2>
-        <h3>👥 People Leadership & Operating Model</h3>
-        <p>I approach scheduling and management as a <strong>capacity allocation problem</strong>, not simply a rota exercise. I match advisor capability, priority severity, and time-zone coverage directly against incoming ticket volumes to ensure capacity systematically follows business risk.</p>
+            <h2>Core Capabilities</h2>
+            
+            <h3>People Leadership & Operating Model</h3>
+            <p>I approach scheduling and management as a <strong>capacity allocation problem</strong>, not simply a rota exercise. I match advisor capability, priority severity, and time-zone coverage directly against incoming ticket volumes to ensure capacity systematically follows business risk.</p>
 
-        <h3>🏢 Account Management & Customer Success</h3>
-        <p>Moving beyond reactive support into proactive lifecycle health tracking. I utilize account-level signals (such as reopen rates and renewal timelines) to stop customer churn, reputation damage, and revenue leakage before they happen.</p>
-        
-        <div class="pipeline-flow">
-            STABLE &nbsp;&rarr;&nbsp; WATCH &nbsp;&rarr;&nbsp; AT RISK &nbsp;&rarr;&nbsp; INTERVENTION
-        </div>
+            <h3>Account Management & Customer Success</h3>
+            <p>Moving beyond reactive support into proactive lifecycle health tracking. I utilize account-level signals (such as reopen rates and renewal timelines) to stop customer churn, reputation damage, and revenue leakage before they happen.</p>
+            
+            <div class="pipeline-track">
+                STABLE &nbsp;&bull;&nbsp; WATCH &nbsp;&bull;&nbsp; AT RISK &nbsp;&bull;&nbsp; INTERVENTION
+            </div>
 
-        <h3>🔄 The 80/20 Resolution Mindset</h3>
-        <p>Focusing on demand reduction rather than endless ticket answering. I systematically identify the small percentage of product defects, process failures, or high-volume issue categories causing the largest share of customer friction.</p>
+            <h3>The 80/20 Resolution Mindset</h3>
+            <p>Focusing on demand reduction rather than endless ticket answering. I systematically identify the small percentage of product defects, process failures, or high-volume issue categories causing the largest share of customer friction.</p>
 
-        <h2>🤖 Systems & Technology Expertise</h2>
-        <ul>
-            <li><strong>Customer Experience & Support:</strong> Intercom, Zendesk, Freshchat, Zoho, Live Chat, Ticket / SLA Operations, QA</li>
-            <li><strong>Data & Operations:</strong> Microsoft Excel, CX Dashboards, KPI Reporting, Workforce Planning, Root Cause Analysis, SOP Development</li>
-            <li><strong>CX Transformation:</strong> Lean Six Sigma, DMAIC, Pareto Analysis, 5 Whys, FMEA, Customer Journey Mapping</li>
-            <li><strong>Product Contribution:</strong> Co-developed <strong>Ruut CRM</strong> (Omnichannel WhatsApp/Telegram automation, AI support workflows, SLA monitoring)</li>
-        </ul>
+            <h2>Systems & Technology Expertise</h2>
+            <ul>
+                <li><strong>Customer Experience & Support:</strong> Intercom, Zendesk, Freshchat, Zoho, Live Chat, Ticket / SLA Operations, QA</li>
+                <li><strong>Data & Operations:</strong> Microsoft Excel, CX Dashboards, KPI Reporting, Workforce Planning, Root Cause Analysis, SOP Development</li>
+                <li><strong>CX Transformation:</strong> Lean Six Sigma, DMAIC, Pareto Analysis, 5 Whys, FMEA, Customer Journey Mapping</li>
+                <li><strong>Product Contribution:</strong> Co-developed <strong>Ruut CRM</strong> (Omnichannel WhatsApp/Telegram automation, AI support workflows, SLA monitoring)</li>
+            </ul>
 
-        <h2>🌍 Industry Experience</h2>
-        <ul>
-            <li><strong>Fintech & Banking:</strong> Customer operations, digital banking, KYC, transaction monitoring, customer risk, service recovery, and retention frameworks.</li>
-            <li><strong>Telecommunications & Travel:</strong> Connectivity and subscription lifecycle support paired with high-touch, time-sensitive luxury customer service models.</li>
-        </ul>
+            <h2>Industry Experience</h2>
+            <ul>
+                <li><strong>Fintech & Banking:</strong> Customer operations, digital banking, KYC, transaction monitoring, customer risk, service recovery, and retention frameworks.</li>
+                <li><strong>Telecommunications & Travel:</strong> Connectivity and subscription lifecycle support paired with high-touch, time-sensitive luxury customer service models.</li>
+            </ul>
 
-        <h2>🤝 Let's Connect</h2>
-        <p>Open to senior remote opportunities across Customer Experience Leadership, Customer Success, Customer Operations, and Account Management where the organization values ownership, business judgment, and continuous operational improvement.</p>
-        <p><a href="mailto:efavouradaka@gmail.com">Email Me</a> · <a href="https://linkedin.com" target="_blank">LinkedIn Profile ↗</a></p>
-
-    </main>
+            <h2>Let's Connect</h2>
+            <p>Open to senior remote opportunities across Customer Experience Leadership, Customer Success, Customer Operations, and Account Management where the organization values ownership, business judgment, and continuous operational improvement.</p>
+            <p><a href="mailto:efavouradaka@gmail.com">Email Me</a> &middot; <a href="https://linkedin.com" target="_blank">LinkedIn Profile</a></p>
+        </main>
+    </div>
 
 </body>
 </html>
+
