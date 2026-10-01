@@ -1,4 +1,4 @@
-<!DOCTYPE html><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -28,6 +28,19 @@
         }
         header {
             margin-bottom: 3.5rem;
+        }
+        .header-content {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 1px solid var(--border);
+            flex-shrink: 0;
         }
         h1 { 
             font-size: 2.25rem; 
@@ -123,33 +136,46 @@
         li { 
             margin-bottom: 0.5rem; 
         }
+
+        /* Mobile layout adjustment */
+        @media (max-width: 600px) {
+            .header-content {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1.5rem;
+            }
+        }
     </style>
 </head>
 <body>
 
     <div class="container">
         <header>
-            <img src="profile.jpg" alt="Favour Ejiroghene Adaka" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; margin-bottom: 1.5rem; display: block; border: 1px solid var(--border);">
-
-            <h1>Favour Ejiroghene Adaka</h1>
-            <p class="subtitle">Customer Experience & Operations Leader | Customer Success | Continuous Improvement</p>
-            <div class="nav-bar">
-                <a href="https://linkedin.com" target="_blank">LinkedIn Profile &rarr;</a>
-                <a href="mailto:efavouradaka@gmail.com">Email Me &rarr;</a>
+            <div class="header-content">
+                <!-- PICTURE INJECTED HERE -->
+                <img src="profile.jpg" alt="Favour Ejiroghene Adaka" class="profile-img">
+                <div>
+                    <h1>Favour Ejiroghene Adaka</h1>
+                    <p class="subtitle">Customer Experience & Operations Leader | Customer Success | Continuous Improvement</p>
+                    <div class="nav-bar">
+                        <a href="https://linkedin.com" target="_blank">LinkedIn Profile &rarr;</a>
+                        <a href="mailto:efavouradaka@gmail.com">Email Me &rarr;</a>
+                    </div>
+                </div>
             </div>
         </header>
 
         <main>
             <h2>My Operational Philosophy</h2>
-            <p>I do not look at customer experience as simply answering tickets faster. My focus is building the operational architecture behind service delivery—aligning **people, process, data, and technology** to turn customer insights into measurable business growth.</p>
-            <p>I have led distributed teams of **45+ professionals**, scaled customer operations through explosive transitions from **100K to over 500K+ active users**, managed complex escalations, and systematically transformed customer support departments from costly overhead sinks into commercial retention assets.</p>
+            <p>I do not look at customer experience as simply answering tickets faster. My focus is building the operational architecture behind service delivery—aligning <strong>people, process, data, and technology</strong> to turn customer insights into measurable business growth.</p>
+            <p>I have led distributed teams of <strong>45+ professionals</strong>, scaled customer operations through explosive transitions from <strong>100K to over 500K+ active users</strong>, managed complex escalations, and systematically transformed customer support departments from costly overhead sinks into commercial retention assets.</p>
 
             <h2>Lean & Six Sigma Transformation Architecture</h2>
             <p>I approach customer operations through a rigorous continuous improvement lens. Instead of scaling up head counts to survive expanding contact volumes, I apply data discipline to target and remove structural waste, friction, and defects at their root cause:</p>
             <ul>
                 <li><strong>DMAIC Pathway Management:</strong> Applying structured Define, Measure, Analyze, Improve, and Control frameworks to audit complex service journeys, resulting in a <strong>30% reduction in Standard Operating Procedure (SOP) cycle times</strong>.</li>
                 <li><strong>Defect Mode & Effects Analysis (FMEA):</strong> Proactively mapping vulnerabilities across omnichannel support channels and backend handoffs to block failure points before they trigger critical customer loss or reputation damage.</li>
-                <li><strong>Pareto Root-Cause Dissection:</strong> Executing 80/20 data evaluations and the 5 Whys methodology to identify the small percentage of product bugs or process gaps driving the largest share of ticket backlogs, moving teams from <strong>reactive troubleshooting to scalable demand reduction</strong>.</li>
+                <li><strong>Pareto Root-Cause Dissection:</strong> Executing 80/20 data evaluations and the 5 Whys methodology to identify the small percentage of product bugs or process gaps driving the largest share of ticket backlogs, moving teams from reactive troubleshooting to scalable demand reduction.</li>
             </ul>
 
             <h2>Leadership, Scale & Business Impact</h2>
@@ -183,21 +209,13 @@
             <p>I view agent scheduling as a dynamic capacity optimization issue rather than a simple rota assignment. Rota design must balance ticket patterns, severity variables, account risk, individual capability profiles, and time-zone coverage. True operational stability means ensuring capacity follows business risk—not just spreading ticket counts equally.</p>
 
             <h3>Proactive Account Health Management</h3>
-            <p>True customer success requires tracking leading behavior indicators instead of waiting for user complaints. By analyzing metrics like reopening patterns, repeat contact markers, transaction failure flags, and renewal timelines, I implement early intervention strategies to categorize accounts dynamically: <strong>Stable &rarr; Watch &rarr; At Risk &rarr; Intervention</strong>.</p>
+            <p>True customer success requires tracking leading behavior indicators instead of waiting for user complaints. By analyzing metrics like reopening patterns, repeat contact markers, transaction failure flags, and renewal timelines, I implement early intervention strategies to categorize accounts dynamically.</p>
 
             <h2>Systems & Technology Toolkit</h2>
             <ul>
                 <li><strong>Customer Experience Ecosystems:</strong> Intercom, Zendesk, Freshchat, Zoho, Live Chat, Ticket Life Cycle Optimization, SLA Monitoring, QA Infrastructure</li>
                 <li><strong>Data Operations & Workforce Analytics:</strong> Microsoft Excel, Cross-Functional Dashboards, Capacity Modeling, Process Mapping, KPI Reporting</li>
-                <li><strong>Product Strategy Contributions:</strong> Co-developed <strong>Ruut CRM</strong>, mapping automated workflows, WhatsApp/Telegram omnichannel aggregators, AI support tools, and real-time transaction audit logs to simplify high-volume African commercial workflows.</li>
-            </ul>
 
-            <h2>Industry Blueprint</h2>
             <ul>
-                <li><strong>Fintech, Crypto & Banking:</strong> Driving service recovery workflows, digital banking KYC onboarding, blockchain transaction exception triage, wallet vulnerability scaling, and fraud mitigation layers.</li>
-                <li><strong>Travel, Hospitality & Telecoms:</strong> Deploying elite, premium-tier service architecture, orchestrating urgent luxury booking recoveries, and managing subscription infrastructure loops.</li>
-            </ul>
-
-            <h2>Let's Connect</h2>
 
 
