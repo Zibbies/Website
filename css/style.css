@@ -155,3 +155,25 @@ h3{font-size:21px;line-height:1.25}
   .footer-top{display:block}
   .footer-links{margin-top:18px;flex-wrap:wrap}
 }
+/* Keep the opening message visible on the first screen */
+.hero {
+    min-height: auto;
+    padding-top: 70px;
+    padding-bottom: 55px;
+}
+
+.hero-content {
+    padding-top: 0;
+}
+
+.hero h1 {
+    margin-bottom: 18px;
+}
+
+.hero p {
+    margin-bottom: 24px;
+}
+
+.hero-photo {
+    transform: translateY(-25px);
+}
